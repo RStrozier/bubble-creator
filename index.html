@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Bubble Animation Creator</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div id="user-choices" align="center">
+        <div id="choice-container">
+            <h1>Color Bubble Animation</h1>
+            <h2>Choose Up to 5 colors for a bubble animation</h2>
+            <div id="color-choices">
+                <input type="color" id="user-color-1">
+                <input type="color" id="user-color-2">
+                <input type="color" id="user-color-3">
+                <input type="color" id="user-color-4">
+                <input type="color" id="user-color-5">
+            </div>
+            <div id="user-animation-choices">
+                <select id="user-direction-choices">
+                    <option class="direction" id="bounce">Bounce within screen</option>
+                    <option class="direction" id="move-up">Move up; off screen</option>
+                    <option class="direction" id="move-down">Move move-down; off screen</option>
+                    <option class="direction" id="grow">Make circles grow on screen</option>
+                </select>
+                <br>
+                <div id="circle-numeric-container">
+                    <input type="text" id="number-of-circles" placeholder="Number of Circles: ex: 10">
+                </div>
+            </div>
+            <button id="selection-btn">These are my choices</button>
+        </div>
+        <div id="submit-container">
+            <div id="user-grid-container">
+                <div class="user-choices" id="show-user-choice-1"></div>
+                <div class="user-choices" id="show-user-choice-2"></div>
+                <div class="user-choices" id="show-user-choice-3"></div>
+                <div class="user-choices" id="show-user-choice-4"></div>
+                <div class="user-choices" id="show-user-choice-5"></div>
+            </div>
+            <div class="button-grid" align="center">
+                <button id="clear-btn">Clear my Choices!</button>
+                <button id="submit-btn">Animate my Choices!</button>
+            </div>
+        </div>
+    </div>
+    <div id="user-results">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="./assets/canvas.js"></script>
+</body>
+
+</html>
